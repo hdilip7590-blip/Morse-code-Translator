@@ -10,7 +10,7 @@ MORSE_CODE_DICT = {
     '5': '.....', '6': '-....', '7': '--...', '8': '---..',
     '9': '----.', '0': '-----'
 }
-code_or_decode = int(input("option 1: code to Morse option 2: decode to text, Select your option: "))
+code_or_decode = int(input("Option 1: Code to Morse\nOption 2: Decode to text\nSelect your option: "))
 if code_or_decode == 1:
     to_code = input("What word would you like to code: \n")
     cleaned_code = ' '.join(to_code.split())
