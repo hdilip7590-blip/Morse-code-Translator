@@ -12,9 +12,10 @@ MORSE_CODE_DICT = {
 }
 while True:
     try:
-        code_or_decode = int(input("Option 1: Code to Morse\nOption 2: Decode to text\nSelect your option: "))
+        code_or_decode = int(input("\n\n\n\n----Main Menu----\n" \
+        "Option 1: Code to Morse\nOption 2: Decode to text\nOption 3: Exit\nSelect your option: "))
     except ValueError:
-        print("Enter Valid Interger between 1 and 2\n\n")
+        print("Enter Valid Integer 1, 2, and 3\n\n")
     else:
         if code_or_decode == 1:
             to_code = input("\nWhat word would you like to code: \n")
@@ -29,7 +30,7 @@ while True:
                         new.append("/")
 
             print(' '.join(new))
-            break
+            print("")
 
         elif code_or_decode == 2:
             to_decode = input("\nWhat word would you like to decode: \n")
@@ -45,6 +46,10 @@ while True:
                     new.append("/")
 
             print(''.join(new).replace('/',' '))
+            print("")
+
+        elif code_or_decode == 3:
             break
+
         else:
-            print("Choose only between 1 and 2\n\n")
+            print("Choose only from options 1, 2 and 3\n\n")
